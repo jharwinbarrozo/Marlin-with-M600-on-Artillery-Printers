@@ -76,7 +76,7 @@
 //#define THERMISTOR_HISENS_300 
 
 /*OVERRIDE HARDCODED DEFAULTS AND SET YOUR OWN MOTOR STEPS HERE*/
-//#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.13, 80.18, 400, 455 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80.13, 80.18, 400, 455 }
 
     /*OVERRIDE HARDCODED DEFAULTS FOR HOTEND PID VALUES, G2 Sidewinder X-1 V3 6/27-2020*/
     /*#define DEFAULT_Kp 29.12
@@ -1183,7 +1183,7 @@
 #define XY_PROBE_SPEED 8000
 
 // Feedrate (mm/m) for the first approach when double-probing (MULTIPLE_PROBING == 2)
-#define Z_PROBE_SPEED_FAST (500)
+#define Z_PROBE_SPEED_FAST 500
 
 // Feedrate (mm/m) for the "accurate" probe of each point
 #ifdef BLTOUCH
@@ -1227,7 +1227,7 @@
 #define Z_CLEARANCE_MULTI_PROBE     5 // Z Clearance between multiple probes
 #define Z_AFTER_PROBING           10 // Z position after probing is done
 
-#define Z_PROBE_LOW_POINT          -2 // Farthest distance below the trigger-point to go before stopping
+#define Z_PROBE_LOW_POINT          -3 // Farthest distance below the trigger-point to go before stopping
 
 // For M851 give a range for adjusting the Z probe offset
 #define Z_PROBE_OFFSET_RANGE_MIN -20
